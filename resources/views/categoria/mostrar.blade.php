@@ -1,3 +1,6 @@
+@extends("layouts.admin")
+
+@section("contenedor")
 <h1>Mostrar un Registro por ID</h1>
 
 
@@ -8,3 +11,4 @@
     <label for="">Ingrese Descripcion:</label>
     <textarea name="descripcion" disabled>{{ $categoria->descripcion }}</textarea>
     
+@endsection

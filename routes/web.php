@@ -11,5 +11,8 @@ Route::get('/', function () {
 
 // Rutas para Categoria
 
-Route::resource("/categoria", CategoriaController::class);
+Route::resource("/categoria", CategoriaController::class)->middleware("auth");
 Route::resource("/producto", ProductoController::class);
+Auth::routes(["register" => true]);
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

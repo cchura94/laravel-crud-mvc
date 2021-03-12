@@ -1,3 +1,7 @@
+
+@extends("layouts.admin")
+
+@section("contenedor")
 <h1>Editar Registro Categoria</h1>
 
 
@@ -13,3 +17,4 @@
     <br>
     <input type="submit" value="Modificar Categoria">
 </form>
+@endsection
